@@ -1,0 +1,21 @@
+#include <cstdio>
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	cout << "max number of int : "<< INT_MAX << endl;
+	cout << "max number in unsigned int :" << UINT_MAX << endl;
+	cout << "max number in long int : " << LONG_MAX<<endl;
+	cout << "max number in short : " << SHRT_MAX<<endl;
+	cout << "max number in unsigned long : " << ULONG_MAX<<endl;
+	cout << "min number in int : " << INT_MIN << endl;
+	
+	cout << "min number in long int : " << LONG_MIN << endl;
+	cout << "min number in short : " << SHRT_MIN<<endl;
+	
+	cout << "min number in unsigned short : " << USHRT_MAX<<endl;
+	
+}

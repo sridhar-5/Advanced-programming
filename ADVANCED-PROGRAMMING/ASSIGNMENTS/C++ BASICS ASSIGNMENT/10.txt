@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num1 = 50, num2 = 35, temp;
+
+    cout<<" Before Swapping: First Number: "<<num1<<" Second Number: "<<num2<<endl;
+
+    temp = num1;
+    num1 = num2;
+    num2 = temp;
+
+    cout<<" After Swapping: First Number: "<<num1<<" Second Number: "<<num2;
+    cout<<endl;
+    return 0;
+}

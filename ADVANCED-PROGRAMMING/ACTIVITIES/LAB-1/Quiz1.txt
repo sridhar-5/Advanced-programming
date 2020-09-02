@@ -1,0 +1,27 @@
+1Q Which operator is used for input stream?(b)
+a) > b) >> c) < d) <<
+
+2Q
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int i;
+    cout << "Please enter an integer value: ";
+    cin >> i;//+ 4;
+    return 0;
+    
+}
+
+Error coz opertion and input need to be done seperatly.
+
+3Q Convert c to c++
+#include <iostream>
+using namespace std;
+int main()
+{
+    int testInteger= 5;
+    cout <<"Number = "<< testInteger;
+    return 0;
+} 
+

@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cstdio>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	int number;
+	/*Range of integers as given in the question : { -2147483648, 2147483647 } */
+	
+	cout << "please enter a number out of this range : ";
+	cin >> number;
+	cout << number+1; // overflow shown
+	int number1;
+	cout << "please enter a number : ";
+	cin >> number1;
+	cout << number - 1; // underflow
+	return 0;
+	
+}

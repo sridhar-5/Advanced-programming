@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+	int a;
+	int b;
+	int sum;
+	cout<< " Enter 1st number"<<endl;
+	cin>> a;
+	cout<< " Enter 2nd number"<<endl;
+	cin>> b;
+	sum=a+b;
+	cout << " The sum of "<< a << " and "<<b <<" is : "<< sum <<"\n\n" ;
+}

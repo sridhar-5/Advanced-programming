@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int s;
+	float vol;
+    cout<<" Input the side of a cube : "<<endl;
+	cin>>s;
+	vol=(s*s*s);
+    cout<<" The volume of a cube is : "<< vol;
+    cout<<endl;
+    return 0;
+}

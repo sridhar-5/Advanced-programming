@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main()
+    {
+	int r,ht;
+	float vol;
+    cout<<" Input the radius of the cylinder : "<<endl;
+	cin>>r;
+	cout<<" Input the height of the cylinder : "<<endl;
+	cin>>ht;
+	vol=(3.14*rad1*rad1*hgt);
+    cout<<" The volume of a cylinder is : "<< vol;
+    cout << endl;
+    return 0;
+}

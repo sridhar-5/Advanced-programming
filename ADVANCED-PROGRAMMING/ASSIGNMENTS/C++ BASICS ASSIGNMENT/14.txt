@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int w, ln, area, per;
+    cout<<" Input the length of the rectangle : "<<endl;
+	cin>>ln;
+	cout<<" Input the width of the rectangle : "<<endl;
+	cin>>w;
+	area=(ln*w);
+	per=2*(ln+w);
+    cout<<" The area of the rectangle is : "<< area << endl;
+    cout<<" The perimeter of the rectangle is : "<< per;		
+    cout << endl;
+    return 0;
+}
