@@ -1,56 +1,66 @@
 #include <iostream>
 #include <cmath>
-#include <cstdio>
 
 using namespace std;
 
-class Rectangle{
+class square{
+protected:
+  int side;
 public:
-  int length;
-  int breadth;
-
-  Rectangle ()
-  {
-    cout << " # contructor called " << endl;
-    cout << "please enter the length : ";
-    cin >> length;
-    cout << "please enter the breadth :";
-    cin >> breadth;
-  }
   int perimeter()
   {
-    return (2*(length + breadth));
+    return (4*side);
   }
   int area()
   {
-    return (length * breadth);
+    return (side * side);
   }
-  ~Rectangle()
+  void get_data()
   {
-    cout << " # Destructor called";
-    cout << "destructing " << length <<" , " << breadth <<endl;
+    cout << "\nside of the square : ";
+    cin >> side;
+  }
+  square()
+  {
+    cout << " \n square constructor called" ;
+    side = 1;
+    cout << "\n The end";
+  }
+  ~square()
+  {
+    cout << "\nDestructor called";
   }
 };
-class cuboid:public Rectangle{
-  private :
-  int height;
-  public :
-  int cuboi(){
-    return (length*breadth*height);
-
-  }
-  cuboid()
+class cube : private square
+{
+private:
+  int vol;
+  int surface_area;
+public:
+  void getdata()
   {
-    cout << "please enter the height of cuboid : ";
-    cin >> height;
+    square::get_data();
+  }
+  int surfacearea()
+  {
+    int surface_area = (6*side*side);
+    cout << "\n surface area of the cube : " << surface_area;
+  }
+  int volume()
+  {
+
+    int vol = (side * side * side );
+    cout << "\n volume of the cube : " << vol;
   }
 };
-
 int main()
 {
-  cuboid c1;
-  cout << "The perimeter of rectangle : " << c1.perimeter()<<endl;
-  cout << "The area of the rectangle : " << c1.area() << endl;
-
-  cout << "The volume of the rectanglr : " << c1.cuboi() << endl;
+  square s1;
+  s1.get_data();
+  cout << "\n perimeter of the square :" << s1.perimeter();
+  cout << "\n area of the square : " << s1.area();
+  cube c1;
+  c1.getdata();
+  c1.surfacearea();
+  c1.volume();
 }
